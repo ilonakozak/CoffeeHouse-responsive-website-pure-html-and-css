@@ -225,6 +225,346 @@ ul.cart-icons {
     font-family: "Roboto Condensed";
 }
 
+/* MAIN STYLES */
+
+main {
+    margin: 100px auto;
+    background-image: url(../images/our_coffe_left_bcg.jpg), url(../images/our_coffe_right_bcg.jpg);
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+}
+
+.welcome-message {
+    width: 80%;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-message .image-left {
+    width: 40%;
+}
+
+.welcome-message .right-column {
+    width: 60%;
+    margin-left: 30px;
+}
+
+.welcome-message .right-column .features {
+    display: flex;
+    border-top: 6px solid #d5d5d5;
+    border-bottom: 6px solid #d5d5d5;
+    padding: 20px 0 15px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.features .big-number {
+    width: 50%;
+    color: #709941;
+    font-family: "Roboto Condensed";
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 120px;
+}
+
+.features .big-number p {
+    font-size: 1.2rem;
+    color: #30271c;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-left: 32px;
+}
+
+.features .slogan {
+    width: 50%;
+    border-left: 6px solid #709941;
+    color: #709941;
+    font-family: "Roboto Condensed";
+    font-size: 1.5rem;
+    padding: 20px 50px;
+    line-height: 30px;
+}
+
+/* SERVICE STYLES */
+.service {
+    background-color: #eee;
+    background-image: url(../images/service_bcg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 50px 0;
+    margin-bottom: 60px;
+}
+
+.service .row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.service p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: #709941;
+    margin-bottom: 20px;
+}
+
+.service .card-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-item {
+    color: #fff;
+    height: 300px;
+    margin: 10px auto;
+    padding: 0;
+    width: 330px;
+    position: relative;
+}
+
+.card-item.item-1 {
+    background-image: url(../images/organic_farm.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.card-item.item-2 {
+    background-image: url(../images/perfect_roast.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.card-item.item-3 {
+    background-image: url(../images/supreme_coffee.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.card-item-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card-container a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.card-container .card-item:focus a::after,
+.card-container .card-item:hover a::after {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.card-container .card-item .item-content {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card-container .card-item .primary-title {
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.card-container .card-item .primary-title h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.card-container .card-item:focus .primary-title h4,
+.card-container .card-item:hover .primary-title h4 {
+    -moz-transform: translate3d(0, -230px, 0);
+    -webkit-transform: translate3d(0, -230px, 0);
+    transform: translate3d(0, -230px, 0);
+    -moz-transition: -moz-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    -o-transition: -o-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    transition: transform 300ms cubic-bezier(0, 0, 0.4, 1);
+}
+
+.card-container .card-item .primary-title h4 {
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transition: -moz-transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+    -o-transition: -o-transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    transition: transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+}
+
+.card-container .card-item .item-content {
+    opacity: 0;
+    -moz-transition: opacity 300ms ease-out;
+    -o-transition: opacity 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+
+.card-container .card-item .item-content p {
+    color: #30271c;
+    opacity: 1;
+    -moz-transform: translate3d(0, 230px, 0);
+    -webkit-transform: translate3d(0, 230px, 0);
+    transform: translate3d(0, 230px, 0);
+    -moz-transition: -moz-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    -o-transition: -o-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    transition: transform 300ms cubic-bezier(0, 0, 0.4, 1);
+}
+
+.card-container .card-item:focus .item-content p,
+.card-container .card-item:hover .item-content p {
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transition: -moz-transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+    -o-transition: -o-transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
+    transition: transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
+}
+
+.card-container .card-item .item-content:hover {
+    background-color: #eee;
+    border: 3px solid #d5d5d5;
+}
+
+.card-container .card-item .item-content p.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.card-container .card-item .item-content p.description {
+    color: #30271c;
+}
+
+.card-container .card-item:focus .primary-title h4,
+.card-container .card-item:focus .item-content,
+.card-container .card-item:hover .primary-title h4,
+.card-container .card-item:hover .item-content {
+    opacity: 1;
+}
+
+/* PRODUCTS STYLES */
+.products {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-gallery {
+    flex-flow: row wrap;
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-gallery img {
+    flex: auto;
+    width: 655px;
+}
+
+.product-gallery img.small {
+    width: 400px;
+}
+
+.product-gallery img:nth-child(1) {
+    margin: 0 10px 10px 0;
+}
+
+.product-gallery img:nth-child(2) {
+    margin: 0 0 10px 10px;
+}
+
+.product-gallery img:nth-child(3) {
+    margin: 10px 10px 0 0;
+}
+
+.product-gallery img:nth-child(4) {
+    margin: 10px 0 0 10px;
+}
+
+.visit-shop {
+    margin: 30px auto;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.visit-shop h3 {
+    margin: 0;
+}
+
+.visit-shop img {
+    width: 138px;
+    height: auto;
+    margin: -56px 30px;
+}
+
+/* BOTTOM PANEL STYLES */
+.bottom-panel {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.brown-panel {
+    background-image: url(../images/green_coffee_beans.png), url(../images/brown_bcg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: left bottom, left top;
+}
+
+.brown-panel .company {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+.brown-panel .company .big-number {
+    color: #fff;
+    font-weight: 900;
+    font-size: 7rem;
+    line-height: 80px;
+    text-align: center;
+}
+
+.brown-panel .company .big-number p {
+    color: #709941;
+    font-family: "Roboto Condensed";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 
 
 
@@ -237,6 +577,22 @@ ul.cart-icons {
 
     h3 {
         font-size: 2rem;
+    }
+
+    .product-gallery img {
+        width: 350px;
+    }
+
+    .product-gallery img.small {
+        width: 220px;
+    }
+
+    .visit-shop {
+        padding: 20px;
+    }
+
+    .brown-panel .company .big-number {
+        font-size: 5.5rem;
     }
 }
 
@@ -335,5 +691,124 @@ ul.cart-icons {
         height: 400px;
         background-position: right top;
         padding-left: 100px;
+    }
+
+    main {
+        margin: 30px auto;
+        background-size: 120px;
+    }
+
+    p.welcome {
+        margin-top: 30px;
+    }
+
+    .welcome-message {
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .welcome-message .right-column {
+        width: 90%;
+    }
+
+    .welcome-message .image-left {
+        display: none;
+    }
+
+    .features .slogan {
+        padding: 20px;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
+    .service .row {
+        width: 98%;
+    }
+
+    .service p {
+        width: 90%;
+    }
+
+    .service .card-container {
+        width: 98%;
+    }
+
+    .card-container .card-item .primary-title {
+        left: 10%;
+    }
+
+    .card-container .card-item .item-content p.title {
+        margin-top: 0;
+    }
+
+    .products {
+        width: 90%;
+    }
+
+    .product-gallery img,
+    .product-gallery img.small {
+        width: 100%;
+        height: auto;
+        margin: 5px auto !important;
+    }
+
+    .visit-shop {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .visit-shop img {
+        order: 1;
+        margin: -20px 30px 0 0;
+    }
+
+    .visit-shop h3 {
+        order: 2;
+        margin: -100px auto 0;
+        line-height: 40px;
+    }
+
+    .visit-shop .button {
+        order: 3;
+        width: 220px;
+        margin: 20px auto 0
+    }
+
+    .brown-panel .company {
+        width: 90%;
+        padding: 20px 0 30px;
+        flex-wrap: wrap;
+    }
+
+    .brown-panel .company .big-number {
+        font-size: 4rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .service .card-container {
+        flex-direction: column;
+        margin-top: 20px;
+        width: 70%;
+    }
+
+    .card-container .card-item .primary-title {
+        left: 20%;
+    }
+
+    .card-container .card-item .item-content p.title {
+        margin-top: 20px;
+    }
+
+    .visit-shop h3 {
+        margin: -100px 0 0;
+        text-align: right;
+    }
+
+    .visit-shop .button {
+        margin: 20px 0 0 150px;
     }
 }
