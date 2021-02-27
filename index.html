@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeHouse - eCommerce Website Layout</title>
+    <title>Shopify Website Layout</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -13,39 +12,42 @@
 
 <body>
     <header>
-        <div class="brand-logo">
-            <a href="index.html"><img class="responsive" src="images/logo.png" alt="company logo"></a>
+        <div id="top"></div>
+        <div class="header__navbar">
+            <div class="header__navbar-logo">
+                <a href="index.html"><img class="responsive" src="images/logo.png" alt="company logo"></a>
+            </div>
+            <nav class="header__navbar-nav">
+                <input type="checkbox" id="navToggle">
+                <label for="navToggle" class="nav-icon"><i class="fa fa-bars"></i></label>
+                <ul class="menu">
+                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__navbar-cartlogin">
+                <ul class="cart-icons">
+                    <li><a href="#" class="cart-icon" title="View your Profile"> <i class="fa fa-user"></i></a></li>
+                    <li><a href="#" class="cart-icon" title="View your Wishlist"> <i class="fa fa-heart"></i></a></li>
+                    <li><a href="#" class="cart-icon" title="View your Shopping Cart"> <i class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <nav class="nav">
-            <input type="checkbox" id="navToggle">
-            <label for="navToggle" class="nav-icon"><i class="fa fa-bars"></i></label>
-            <ul class="menu">
-                <li class="current-menu-item"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart-login">
-            <ul class="cart-icons">
-                <li><a href="#" class="cart-icon"> <i class="fa fa-user"></i></a></li>
-                <li><a href="#" class="cart-icon"> <i class="fa fa-heart"></i></a></li>
-                <li><a href="#" class="cart-icon"> <i class="fa fa-shopping-bag"></i></a></li>
-            </ul>
-        </div>
+        <!-- Hero Banner -->
+        <section class="header__navbar-banner">
+            <p class="welcome">Welcome to CoffeeHouse</p>
+            <h1>Make <br><span>Perfect</span> Coffee</h1>
+            <p>Come for the coffee, stay for the experience! <br>
+                Every Tuesday in our cafe is tasting of different varietes of coffee
+                and lectures from our barista. <br>
+                You will always find out something new here!</p>
+        </section>
+        <!-- Main Section -->
     </header>
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-        <p class="welcome">Welcome to CoffeeHouse</p>
-        <h1>Make <br><span>Perfect</span> Coffee</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit amet consectetur. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    </section>
-    <!-- Main Section -->
     <main>
         <section class="welcome-message">
             <div class="image-left">
@@ -56,17 +58,20 @@
             <div class="right-column">
                 <p class="welcome">Welcome to CoffeeHouse</p>
                 <h2>Our <span>Coffee</span></h2>
-                <p class="bolder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequatur
-                    reprehenderit nostrum iusto illum reiciendis similique possimus fugit ipsam distinctio? <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, molestiae. </p>
-                <p>THE ENVIRONMENT... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, fugit
-                    perspiciatis. Aliquam omnis ipsa harum! Ea inventore, ullam non, iure eveniet est molestias,
-                    quisquam et pariatur nemo aspernatur odio vitae! <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint id delectus deleniti mollitia
-                    impedit atque vero architecto autem velit. <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores impedit sunt magnam voluptate
-                    quod error repellendus voluptatum consectetur qui, iure recusandae quis vitae, atque dolores odio
-                    nihil doloribus maiores explicabo.</p>
+                <p class="bolder">Supplying a premium, ethically sourced and freshly roasted coffee,
+                    we only use the best quality specialty coffee from all around the world. <br>
+                    We believe it’s important to know about where and who your coffee comes from. </p>
+                <p>THE ENVIRONMENT... Finding ways to live more environmentally friendly is
+                    a mission for absolutely everyone nowadays. We are all concerned about buying produce
+                    which doesn’t just taste amazing, but leaves as little impact on our planet
+                    as possible. As you may know, coffee is not grown in the UK but requires
+                    a hot climate to grow properly. <br>
+                    This means that all the coffee you drink has probably been transported from
+                    Central America, South America or Africa. This requires a lot of air miles. <br>
+                    Plus, farming standards are slipping all around the world, so sourcing your coffee
+                    from reputable, environmentally friendly farms has never been more vital. Buying
+                    local means you can ask questions about the farming practices of the coffee farms,
+                    where exactly the beans come from, and their environmental impact on our planet.</p>
                 <div class="features">
                     <div class="big-number">
                         129
@@ -181,6 +186,64 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <section class="footer__contact">
+                <div class="footer__contact-logo"><a href="index.html"><img class="logo responsive"
+                            src="images/green_logo.png" alt="company logo"></a></div>
+                <p>CoffeHouse is open every day <br>
+                    Monday - Sunday from 10 am to 5pm. <br>
+                    Including bank holidays.</p>
+                <ul class="footer__contact-address">
+                    <li><i class="fas fa-map-marker-alt"></i>Sample Address <br> &nbsp &nbsp &nbsp &nbsp &nbsp Limerick,
+                        Ireland</li>
+                    <li><i class="fas fa-phone-alt"></i><a href="tel://+353 61 123 123">+353 61 123 123</a></li>
+                    <li><i class="far fa-envelope"></i><a href="mailto: office@coffeehouse.ie">office@coffeehouse.ie</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__links">
+                <div class="footer__links-useful">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-locations">
+                    <h4>Other Locations</h4>
+                    <p class="title">Barista CoffeeShop</p>
+                    <p>Street<br>
+                        Birdhill, Co. Limerick
+                    </p>
+                    <p class="title">Coffee Market</p>
+                    <p>Street<br>
+                        Newport<br>
+                        Co. Tipperary
+                    </p>
+                </div>
+                <div class="footer__links-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="footer__copyright">
+            <p>© CoffeeHouse | All Rights Reserved</p>
+            <a href="#top" id="top-button"></a>
+        </section>
+    </footer>
 </body>
 
 </html>
