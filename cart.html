@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <div id="top"></div>
+        <div class="header__navbar">
+            <div class="header__navbar-logo">
+                <a href="index.html"><img class="responsive" src="images/logo.png" alt="company logo"></a>
+            </div>
+            <nav class="header__navbar-nav">
+                <input type="checkbox" id="navToggle">
+                <label for="navToggle" class="nav-icon"><i class="fa fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="current-menu-item"><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__navbar-cartlogin">
+                <ul class="cart-icons">
+                    <li><a href="#" class="cart-icon" title="View your Profile"> <i class="fa fa-user"></i></a></li>
+                    <li><a href="#" class="cart-icon" title="View your Wishlist"> <i class="fa fa-heart"></i></a></li>
+                    <li><a href="cart.html" class="cart-icon" title="View your Shopping Cart"> <i
+                                class="fa fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Hero Banner -->
+        <section class="header__navbar-banner cart">
+            <p class="welcome">Welcome to CoffeeHouse</p>
+            <h1>Shopping <br><span>Cart</span></h1>
+        </section>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <table class="checkout">
+            <thead>
+                <tr>
+                    <th class="product-thumbnail">Preview</th>
+                    <th class="product-name">Product</th>
+                    <th class="product-prices">Price</th>
+                    <th class="product-quantity">Quantity</th>
+                    <th class="product-subtotal">Subtotal</th>
+                    <th class="product-remove">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="thumbnail">
+                            <img class="responsive" src="images/product1.jpg" alt="coffee beans" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">
+                            <h5>Nicaragua 100% Arabica</h5>
+                            <div class="tag-line">
+                                Second level flavour notes: pineapple, guava, strawberry
+                            </div>
+                            <div class="product-id">Product Code: 12387632</div>
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="price">
+                            €17.99
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="quantity">
+                            <select class="chosen-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="price">
+                            €17.99
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="delete">
+                            <a class="close-btn" href="#"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="thumbnail">
+                            <img class="responsive" src="images/product2.jpg" alt="coffee beans" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">
+                            <h5>Columbia Organic</h5>
+                            <div class="tag-line">
+                                Second level flavour notes: plum, orange and caramel with a smooth creamy dark chocolate
+                                finish.
+                            </div>
+                            <div class="product-id">Product Code: 12345678</div>
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="price">
+                            €18.99
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="quantity">
+                            <select class="chosen-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="price">
+                            €18.99
+                        </div>
+                    </td>
+                    <td class="resp-table">
+                        <div class="delete">
+                            <a class="close-btn" href="#"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2" class="price-key">Discount 10%</td>
+                    <td colspan="2" class="price-value">€3.70</td>
+                </tr>
+                <tr class="no-border">
+                    <td colspan="2"></td>
+                    <td colspan="2" class="price-key">Shipping</td>
+                    <td colspan="2" class="price-value">€4.99</td>
+                </tr>
+                <tr class="no-border">
+                    <td colspan="2"></td>
+                    <td colspan="2" class="price-key">VAT 23%</td>
+                    <td colspan="2" class="price-value">€6.91</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="price-total">Total Price</td>
+                    <td colspan="2"></td>
+                    <td colspan="2" class="price-value_total">€38.27</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="checkout-buttons">
+            <a class="button left" href="shop.html"><i class="fa fa-arrow-left"></i> Continue Shopping</a>
+            <a class="button" href="#">Go to Checkout <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="footer__contact">
+                <div class="footer__contact-logo"><a href="index.html"><img class="logo responsive"
+                            src="images/green_logo.png" alt="company logo"></a></div>
+                <p>CoffeHouse is open every day <br>
+                    Monday - Sunday from 10 am to 5pm. <br>
+                    Including bank holidays.</p>
+                <ul class="footer__contact-address">
+                    <li><i class="fas fa-map-marker-alt"></i>Sample Address <br> &nbsp &nbsp &nbsp &nbsp &nbsp Limerick,
+                        Ireland</li>
+                    <li><i class="fas fa-phone-alt"></i><a href="tel://+353 61 123 123">+353 61 123 123</a></li>
+                    <li><i class="far fa-envelope"></i><a href="mailto: office@coffeehouse.ie">office@coffeehouse.ie</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__links">
+                <div class="footer__links-useful">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links-locations">
+                    <h4>Other Locations</h4>
+                    <p class="title">Barista CoffeeShop</p>
+                    <p>Street<br>
+                        Birdhill, Co. Limerick
+                    </p>
+                    <p class="title">Coffee Market</p>
+                    <p>Street<br>
+                        Newport<br>
+                        Co. Tipperary
+                    </p>
+                </div>
+                <div class="footer__links-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <section class="footer__copyright">
+            <p>© CoffeeHouse | All Rights Reserved</p>
+            <a href="#top" id="top-button"></a>
+        </section>
+    </footer>
+</body>
+
+</html>
