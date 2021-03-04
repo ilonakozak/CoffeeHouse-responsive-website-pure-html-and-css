@@ -1013,6 +1013,52 @@ table.checkout .price-value_total {
     text-align: center;
 }
 
+/* CONTACT US PAGE STYLES */
+.header__navbar-banner.contact {
+    height: 700px;
+    background-image: url(../images/hero_banner_contact.jpg);
+}
+
+.contact-form {
+    width: 80%;
+    padding: 40px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #30271c;
+}
+
+::placeholder {
+    color: #30271c;
+}
+
+input[type=submit] {
+    color: #fff;
+    background-color: #709941;
+    border: none;
+    padding: 10px 22px;
+    cursor: pointer;
+    width: auto;
+    font-family: "Roboto Condensed";
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+input[type=submit]:hover {
+    background-color: #709941;
+    color: #30271c;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -1360,6 +1406,11 @@ table.checkout .price-value_total {
 
     .checkout-buttons .button {
         margin: 5px auto;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 40px;
     }
 }
 
