@@ -1113,6 +1113,80 @@ input[type=submit]:hover {
     margin: 40px;
 }
 
+/* FAQ PAGE STYLES */
+.header__navbar-banner.faq {
+    height: 700px;
+    background-image: url(../images/hero_banner_faq.jpg);
+}
+
+.toggles {
+    width: 80%;
+    margin: 0 auto 100px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.toggles__wrap {
+    margin: 10px 0;
+}
+
+.lbl-toggle {
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 15px;
+    color: #fff;
+    background: #30271c;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    color: #FFF;
+}
+
+.lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 10px;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.box-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.box-content {
+    max-height: 350px;
+}
+
+.toggle:checked+.lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.box-content .content-inner {
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.box-content p {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 1024px) {
     .features .big-number {
         font-size: 8rem;
@@ -1469,6 +1543,11 @@ input[type=submit]:hover {
     .main__blog-content {
         grid-template-columns: repeat(2, 49%);
         margin: 20px auto;
+    }
+
+    .toggles {
+        width: 90%;
+        margin: 0 auto 30px;
     }
 }
 
