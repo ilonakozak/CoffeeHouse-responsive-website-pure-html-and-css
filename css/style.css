@@ -1690,8 +1690,8 @@ input[type='checkbox'] {
     }
     .service .card-container {
         flex-direction: column;
-        margin-top: 20px;
-        width: 70%;
+        margin: 20px auto 0;
+        width: 98%;
     }
 
     .card-container .card-item .primary-title {
@@ -1708,7 +1708,7 @@ input[type='checkbox'] {
     }
 
     .visit-shop .button {
-        margin: 20px 0 0 90px;
+        margin: 20px 0 0 80px;
     }
 
     .mosaic__one {
