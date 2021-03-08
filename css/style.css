@@ -1344,6 +1344,10 @@ input[type='checkbox'] {
         line-height: 40px;
     }
 
+    h2 {
+        font-size: 3.8rem;
+    }
+
     h5 {
         font-size: 1.1rem;
     }
@@ -1434,9 +1438,9 @@ input[type='checkbox'] {
     }
 
     .header__navbar-banner, .header__navbar-banner.about, .header__navbar-banner.shop, .header__navbar-banner.contact, .header__navbar-banner.blog, .header__navbar-banner.cart, .header__navbar-banner.faq {
-        height: 400px;
+        height: 450px;
         background-position: right top;
-        padding-left: 100px;
+        padding: 0 20px;
     }
 
     main {
@@ -1463,6 +1467,10 @@ input[type='checkbox'] {
 
     .features .slogan {
         padding: 20px;
+    }
+
+    .features .big-number {
+        font-size: 6rem;
     }
 
     .service {
@@ -1701,7 +1709,7 @@ input[type='checkbox'] {
     }
 
     .visit-shop .button {
-        margin: 20px 0 0 150px;
+        margin: 20px 0 0 90px;
     }
 
     .mosaic__one {
