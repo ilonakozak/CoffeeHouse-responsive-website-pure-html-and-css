@@ -1391,7 +1391,8 @@ input[type='checkbox'] {
 
     .header__navbar-nav ul.menu {
         display: block;
-        margin: 0 30px;
+        padding: 0 30px;
+        line-height: 30px;
     }
 
     .header__navbar-nav ul {
@@ -1424,7 +1425,7 @@ input[type='checkbox'] {
     }
 
     .header__navbar-nav #navToggle:checked~ul {
-        min-height: 350px;
+        min-height: 300px;
         background-color: #312d2e;
     }
 
