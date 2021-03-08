@@ -1427,6 +1427,7 @@ input[type='checkbox'] {
     .header__navbar-nav #navToggle:checked~ul {
         min-height: 300px;
         background-color: #312d2e;
+        padding-top: 10px;
     }
 
     .header__navbar-cartlogin .nav-icon i {
@@ -1709,6 +1710,10 @@ input[type='checkbox'] {
 
     .visit-shop .button {
         margin: 20px 0 0 80px;
+    }
+
+    .main__products-card {
+        flex-basis: 80%;
     }
 
     .mosaic__one {
