@@ -1344,10 +1344,6 @@ input[type='checkbox'] {
         line-height: 40px;
     }
 
-    h2 {
-        font-size: 3.8rem;
-    }
-
     h5 {
         font-size: 1.1rem;
     }
@@ -1689,6 +1685,9 @@ input[type='checkbox'] {
 }
 
 @media screen and (max-width: 576px) {
+    h2 {
+        font-size: 3.2rem;
+    }
     .service .card-container {
         flex-direction: column;
         margin-top: 20px;
