@@ -522,7 +522,7 @@ main {
 }
 
 .product-gallery img.small {
-    width: 400px;
+    width: 30%;
 }
 
 .product-gallery img:nth-child(1) {
@@ -1314,10 +1314,6 @@ input[type='checkbox'] {
 
     .product-gallery img {
         width: 350px;
-    }
-
-    .product-gallery img.small {
-        width: 220px;
     }
 
     .visit-shop {
